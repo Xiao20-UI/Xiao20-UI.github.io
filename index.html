@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>拾页｜个人数字花园</title>
+<meta name="description" content="收藏随笔、历史人物、读书笔记与那些值得反复阅读的句子。">
+<style>
+:root {
+  --paper: #f7f5ef;
+  --ink: #302f2a;
+  --muted: #77776c;
+  --green: #647765;
+  --line: #e4e0d6;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Microsoft YaHei", "PingFang SC",
+    "Noto Serif CJK SC", serif;
+  line-height: 1.9;
+}
+header, main, footer {
+  width: min(900px, 88%);
+  margin: auto;
+}
+header {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+.logo { font-size: 23px; font-weight: bold; }
+nav { display: flex; gap: 18px; flex-wrap: wrap; }
+a { color: inherit; text-decoration: none; }
+nav a, .more { color: var(--green); }
+a:hover { opacity: .7; }
+.hero { padding: 75px 0 60px; }
+.eyebrow {
+  color: var(--green);
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+h1 {
+  font-size: clamp(35px, 7vw, 58px);
+  line-height: 1.4;
+  font-weight: 500;
+  margin: 12px 0;
+}
+.hero p { color: var(--muted); max-width: 540px; }
+section { padding: 28px 0 42px; }
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 12px;
+}
+h2 { font-size: 23px; font-weight: 500; }
+.entry {
+  display: block;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+}
+.entry h3 { margin: 0; font-size: 18px; font-weight: 500; }
+.entry p { margin: 4px 0; color: var(--muted); font-size: 14px; }
+.quote {
+  border-left: 3px solid var(--green);
+  padding: 18px 24px;
+  margin: 18px 0;
+  background: #efede5;
+}
+footer {
+  border-top: 1px solid var(--line);
+  padding: 25px 0 40px;
+  color: var(--muted);
+  font-size: 13px;
+}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="#">拾页.</a>
+  <nav>
+    <a href="#essays">随笔</a>
+    <a href="#history">人物</a>
+    <a href="#reading">读书</a>
+    <a href="#quotes">句子</a>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="eyebrow">MY LITTLE DIGITAL GARDEN</div>
+    <h1>把读过的书，<br>走过的路，留在这里。</h1>
+    <p>这里收藏生活的片段、历史人物的故事、读书时的思考，以及那些偶然读到，却不舍得忘记的句子。</p>
+  </div>
+
+  <section id="essays">
+    <div class="section-title">
+      <h2>日常随笔</h2><span>01</span>
+    </div>
+    <a class="entry" href="#about">
+      <h3>雨停之后，生活仍在继续</h3>
+      <p>一些关于日常、告别与重新出发的记录。</p>
+    </a>
+    <a class="entry" href="#about">
+      <h3>那些没有说出口的话</h3>
+      <p>写给某个下午，也写给曾经的自己。</p>
+    </a>
+  </section>
+
+  <section id="history">
+    <div class="section-title">
+      <h2>历史人物</h2><span>02</span>
+    </div>
+    <a class="entry" href="#about">
+      <h3>上官婉儿：长安风月与她的一生</h3>
+      <p>在历史的缝隙里，重新认识一个人。</p>
+    </a>
+    <a class="entry" href="#about">
+      <h3>李清照：词里的半生风雨</h3>
+      <p>从明媚年少，到山河飘零。</p>
+    </a>
+  </section>
+
+  <section id="reading">
+    <div class="section-title">
+      <h2>读书笔记</h2><span>03</span>
+    </div>
+    <a class="entry" href="#about">
+      <h3>读一本书，也是在认识自己</h3>
+      <p>记录触动我的章节、观点与阅读感想。</p>
+    </a>
+  </section>
+
+  <section id="quotes">
+    <div class="section-title">
+      <h2>句子收藏</h2><span>04</span>
+    </div>
+    <div class="quote">
+      有些文字并不急着给出答案，只是陪你走过一段路。
+    </div>
+    <p style="color:var(--muted);font-size:13px">
+      收藏喜欢的句子时，记得注明作者和出处。
+    </p>
+  </section>
+
+  <section id="about">
+    <div class="section-title"><h2>关于这里</h2></div>
+    <p>这是一个慢慢生长的个人角落。愿每一次阅读与记录，都能留下些许痕迹。</p>
+  </section>
+</main>
+
+<footer>
+  拾页 · 让思考留下痕迹
+</footer>
+</body>
+</html>
